@@ -50,6 +50,7 @@
 }
 .growYourSales-img-content-box div:nth-child(2) img {
   height: 30px;
+  object-fit: contain;
 }
 .growYourSales-img-content-box-inner {
   display: flex;
