@@ -1,6 +1,23 @@
 .pmshopify {
   margin-left: 10px;
 }
+
+.logo {
+  display: flex;
+  align-items: end;
+}
+
+.pms_logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.pms_logo span {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+}
+
 .growyoursales .heroBanner {
   display: flex;
   align-items: top;
