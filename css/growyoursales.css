@@ -37,7 +37,7 @@
   vertical-align: middle;
 }
 .growyoursales .contentLeft h1 {
-  font-size: 60px;
+  font-size: 58px;
   font-weight: 400;
   color: #1e1e1e;
   margin: 5px 0;
@@ -48,11 +48,35 @@
   color: #1f2024;
   font-size: 16px;
   font-weight: 300;
+  line-height: 26px;
 }
 .growyoursales .heroBanner .contentRight {
   padding-top: 120px;
   width: 40%;
   position: relative;
+}
+
+.hero_cta {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_cta_pair {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero_cta span {
+  font-family: Lexend;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: #9C9C9C;
 }
 
 /**********************/
@@ -120,10 +144,17 @@
 
 /**********************/
 
+.clientLogo h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+
 ul.custbult {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 .custbult li {
   padding: 0 0 0 30px;
@@ -137,8 +168,14 @@ ul.custbult {
   background-position: 0px 3px;
 }
 .growyoursales .heroBanner .btn {
-  margin-left: 0;
+  margin: 8px 0px 8px 0px;
 }
+
+.growyoursales .heroBanner span.last_hour {
+  color: #5E29A4;
+  font-weight: 300;
+}
+
 .growyoursales .heroBanner .secbtn {
   font-size: 21px;
   font-weight: 300;
@@ -227,6 +264,11 @@ ul.custbult {
 .growyoursales .needAudit .securebtn {
   margin-top: 15px;
 }
+
+.growyoursales .needAudit a.btn, .review-interaction-button-1 .btn, .review-interaction-button-2 .btn {
+  background: #fff;
+  color: #676BCB;
+}
 .growyoursales .needAudit .securebtn img {
   width: 10px;
 }
@@ -305,6 +347,8 @@ ul.custbult {
   padding: 15px;
   font-weight: 300;
   margin-top: 15px;
+  background: transparent;
+  color: #676bcb;
 }
 .pricing .grid .highlight h3,
 .pricing .grid .highlight p,
@@ -326,7 +370,7 @@ ul.custbult {
 
 .salesPitch {
   background: #676bcb;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .salesPitch .contain {
   display: flex;
@@ -346,6 +390,8 @@ ul.custbult {
   margin: 0;
   padding: 0;
   font-weight: 200;
+  text-transform: capitalize;
+  max-width: 600px;
 }
 .salesPitch .btnDark {
   background: #fff;
@@ -390,8 +436,48 @@ ul.custbult {
   vertical-align: middle;
   display: inline-block;
 }
+
+div#portsplide {
+  padding: 0 25px;
+}
+
+.case-study-section li {
+  max-width: 375px;
+}
+
+div#portsplide ul.splide__pagination {
+  bottom: -30px;
+}
+
+div#portsplide button.splide__pagination__page.is-active {
+  background: #764FBE;
+  width: 32px;
+  border-radius: 0;
+  height: 4px;
+  margin: 0 12px;
+}
+
+div#portsplide button.splide__pagination__page {
+  background: #6968713D;
+  height: 4px;
+  width: 16px;
+  border-radius: 0;
+  border: 0;
+}
+
+div#portsplide  .splide__pagination li {
+  line-height: normal;
+}
+
+.clutchRatings .clutchLogo img {
+  box-shadow: 0px 0px 8px 0px #0000001A;
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+}
+
 .faqs {
-  padding-bottom: 70px;
+  padding: 80px 0;
 }
 .faqs h2 {
   font-size: 40px;
@@ -401,6 +487,7 @@ ul.custbult {
   margin: 0 0 40px 0;
   text-align: center;
 }
+
 .faqs .accordion__answer {
   display: none;
   transition: All 0.3s; /* Animation */
@@ -443,6 +530,22 @@ ul.custbult {
 .faqs .accordion.active .accordion__question {
   background-image: url("../images/arrow-up.svg");
 }
+@media (max-width: 1279px) {
+.header .menu a {
+  font-size: 14px;
+  padding: 10px 10px;
+}
+.header .home-menu-btn a.highlight {
+  padding: 15px 15px;
+  font-size: 11px;
+}
+}
+@media (max-width: 1199px) {
+  .hero_cta_pair {
+    flex-direction: column-reverse;
+    align-items: baseline;
+}
+}
 @media (max-width: 1100px) {
   .growyoursales .contentLeft h1 {
     font-size: 50px;
@@ -467,6 +570,10 @@ ul.custbult {
     max-width: 450px;
     width: 100%;
   }
+
+  .header .menu a {
+    font-size: 12px;
+}
 }
 @media (max-width: 800px) {
   .growyoursales .heroBanner {
@@ -521,6 +628,9 @@ ul.custbult {
     padding: 0;
     padding-bottom: 50px;
   }
+  .case-study-section {
+    gap: 0px; 
+}
 }
 @media (max-width: 500px) {
   .growyoursales .contentLeft h1 {
@@ -538,4 +648,44 @@ ul.custbult {
   .growyoursales .needAudit h3 {
     font-size: 18px;
   }
+  .clutchRatings .clutchLogo img {
+    width: 60px;
+    height: 60px;
+}
+.clientLogo h2, .growyoursales .needAudit h2, .pricing h2 {
+  font-size: 30px;
+}
+.growyoursales .needAudit .grid {
+  flex-direction: column;
+  gap: 25px;
+  max-width: 200px;
+}
+.clientLogo {
+  padding: 0px 0;
+}
+
+.clientLogo img {
+  max-height: 50px;
+  object-fit: contain;
+}
+body.growyoursales .reviews {
+  padding: 10px 0;
+  padding-bottom: 0;
+}
+.growyoursales .needAudit {
+  margin: 0px auto 0;
+}
+.growyoursales .whatsinit {
+  margin: 50px auto 0;
+}
+
+body.growyoursales .faqs {
+  padding: 50px 0 0;
+}
+
+.footer {
+  margin-top: 65px;
+  padding-top: 50px !important;
+}
+
 }
